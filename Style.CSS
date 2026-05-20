@@ -1,0 +1,112 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:Comic sans-serif;
+    background:#7c7878e2;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.login-container{
+    background:white;
+    padding:45px;
+    border-radius:20px;
+    width:300px;
+}
+
+input{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    box-sizing:border-box;
+}
+
+/* Botones */
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    background:blue;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:darkblue;
+}
+
+/* Mensaje de Pantalla */
+
+#mensaje{
+    margin-top:10px;
+    color:red;
+}
+
+/* Imágenes */
+
+.logo{
+    width:37px;      /* ancho */
+    height:37px;     /* alto */
+
+    position:absolute;
+
+    top:247px;         /* abajo desde arriba */
+    left: 493px;
+}
+
+.clave{
+    width:75px;      /* ancho */
+    height:75px;     /* alto */
+
+    position:absolute;
+
+    top:280px;         /* abajo desde arriba */
+    left:475px;
+}
+
+#ojo{
+    position:absolute;
+    left:835px;
+    top:315px;;
+    transform:translateY(-50%);
+    cursor:pointer;
+    font-size:20px;
+}
+
+/* Pantalla para celulares */
+
+@media(max-width:600px){
+.login-container{
+width:90%;
+padding:20px;
+}
+input{
+
+        width:100%;
+        font-size:16px;
+
+    }
+
+    button{
+
+        width:100%;
+        font-size:16px;
+
+    }
+
+    .logo{
+
+        width:80px;
+    }
+
+    .clave{
+
+        width:30px;
+    }
+
+}

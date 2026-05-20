@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD de Usuarios</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="boton" onclick="mostrarSeccion()">Mostrar sección</button>
+    
+    <div id="seccion" style="display: none;">
+    <div class="contenedor">
+        <h1>CRUD de Usuarios</h1>
+
+        <form id="formulario">
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            <input type="text" id="apellido" placeholder="Ingrese su apellido"required>
+            <input type="email" id="correo" placeholder="Ingrese su correo" required>
+            <input type="number" id="numero" placeholder="Ingrese su número telefónico">
+            <input type="date" id="fecha" placeholder="Ingrese su fecha de nacimiento">
+            <input type="number" id="grado" placeholder="Ingrese su grado">
+            <button type="submit">Guardar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Correo</th>
+                    <th>Número</th>
+                    <th>Fecha de Nacimiento</th>
+                    <th>Grado</th>
+                </tr>
+            </thead>
+            <tbody id="tablaUsuarios"> 
+            </tbody>
+        </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
